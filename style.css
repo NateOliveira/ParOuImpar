@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Architects Daughter', cursive;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: coral;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 20px 20px 20px rgb(255, 128, 82, 0.6);
+}
+
+div h1 {
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+div input {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    background-color: rgb(223, 236, 102);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+div button {
+    background-color: rgb(223, 236, 102);
+    width: 50%;
+    border-radius: 20px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 35px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+div button:hover {
+    background-color: rgb(221, 243, 22);
+}
