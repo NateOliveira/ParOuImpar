@@ -9,3 +9,12 @@ function verifica() {
             alert("o numero é ímpar")
      }
 }
+
+//Dark Mode
+
+const $html = document.querySelector('html')
+const $checkbox = document.querySelector('#switch')
+
+$checkbox.addEventListener('change', function(){
+    $html.classList.toggle('dark-mode')
+})

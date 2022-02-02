@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+:root {
+    --body-bg: #E8EAE6;
+    --div-bg: #CFDAC8;
+    --box-shadow: rgb(124, 148, 115);
+    --h1-color: #7C9473;
+    --input-bg: #CDD0CB;
+    --label-color: #000000
+}
+
+.dark-mode:root {
+    --body-bg: #000000;
+    --div-bg: #3E432E;
+    --box-shadow: rgb(167, 209, 41, 0.5);
+    --h1-color: #A7D129;
+    --input-bg: #616F39;
+    --label-color: #FFFFFF
+}
+
 body {
     display: flex;
     align-items: center;
@@ -11,7 +29,7 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Architects Daughter', cursive;
-    background-color:#fafafa;
+    background-color: var(--body-bg);
 }
 
 div {
@@ -19,30 +37,30 @@ div {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color:#d2d3db;
+    background-color:var( --div-bg);
     border-radius: 20px;
     padding: 2rem;
-    box-shadow: 10px 10px 20px rgb(97, 26, 230, 0.5);
+    box-shadow: 10px 10px 20px var(--box-shadow);
 }
 
 div h1 {
     font-size: 48px;
     margin-bottom: 2rem;
-    color: rgb(97, 26, 230);
+    color: var(--h1-color);
 }
 
 div input {
     width: 100%;
     border-radius: 20px;
     margin-bottom: 2rem;
-    background-color:#e4e5f1;
+    background-color:var(--input-bg);
     font-family: 'Architects Daughter', cursive;
     font-size: 35px;
     text-align: center;
 }
 
 div button {
-    background-color:#e4e5f1;
+    background-color:var(--input-bg);
     width: 50%;
     border-radius: 20px;
     font-family: 'Architects Daughter', cursive;
@@ -52,5 +70,9 @@ div button {
 }
 
 div button:hover {
-    background-color:rgba(97, 26, 230, 0.5);
+    background-color:var(--box-shadow);
+}
+
+label {
+    color: var(--label-color);
 }
