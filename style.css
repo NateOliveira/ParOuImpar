@@ -75,4 +75,5 @@ div button:hover {
 
 label {
     color: var(--label-color);
+    margin: 1rem;
 }
